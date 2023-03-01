@@ -11,7 +11,6 @@ class Memo < Post
     end
     
     @text.pop
-
   end
 
   def to_strings
