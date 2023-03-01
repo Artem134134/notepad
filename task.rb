@@ -8,6 +8,7 @@ class Task < Post
   end
 
   def read_from_console
+    
     puts "What to do?"
     @text = STDIN.gets.chomp
 
