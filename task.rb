@@ -8,7 +8,7 @@ class Task < Post
   end
 
   def read_from_console
-    
+
     puts "What to do?"
     @text = STDIN.gets.chomp
 
@@ -20,7 +20,10 @@ class Task < Post
   end
 
   def to_strings
-
-  end
-  
+    time_string = "Created: #{@created_at.strftime('%Y.%m.%d, %H:%M:%S')}\n\r"
+    
+    deadline = "Dead line: #{@due_date.strftime('%Y.%m.%d')}"
+    
+    return [deadline, @text, time_string]
+  end 
 end
