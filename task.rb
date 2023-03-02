@@ -1,4 +1,5 @@
 require 'date'
+
 class Task < Post
   def initialize
     super
